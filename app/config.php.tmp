@@ -8,6 +8,29 @@
             "pass" => "",  // database password
             "table" => "map_votes" // Default is "map_votes"
         ],
-        "title" => "Map Popularity", // The Title of the page
+        "title" => "Map Popularity",
         "game" => "cod4", // See the list of games bellow
-    ]
+
+        // Do not touch the below please. These are constant vars are are not needed
+        // to be changed unless I update the system.
+        "gametracker" => "http://image.www.gametracker.com/images/maps/160x120/"
+    ];
+
+
+// Game codes:
+// Use the codes below in the game's section of the config file
+
+// cod = Call of Duty
+// cod2 = Call of Duty 2
+// cod4 = Call of Duty 4: Modern Warfare
+// codww = Call of Duty 5: World at War
+// blackops = Call of Duty: Black Ops
+// cod6 = Call of Duty 6: Modern Warefare 2
+// urbanterror = Urban Terror
+// etqw = Enemy Territory
+// q3 = Quake 3
+// sof2 = Soldier of Fortune 2
+// bc2 = Battlefield Bad Company 2
+// moh = Medal of Honor 2010
+// bf3 = Battlefield 3
+// homefront = Homefront
