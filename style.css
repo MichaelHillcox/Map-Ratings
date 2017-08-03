@@ -1,0 +1,147 @@
+/* -- General Settings -- */
+body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	background-color: #282828;
+	color: #ebebeb;
+	padding-bottom: 100px;
+}
+
+.alert {
+	width: 750px;
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: red;
+}
+
+
+/* -- Table Settings -- */
+table {
+	border: none;
+	border-collapse: collapse;
+	padding: 10px;
+	background-color: #001D55;
+}
+
+table.sortable th {
+	background-color:#3C3C3C;
+	color:#ebebeb;
+	font-weight: bold;
+	font-size: 14pt;
+	cursor: pointer;
+	border-bottom: 10px solid #282828;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+th:hover {
+	text-decoration: underline;
+}
+
+tr {
+	border-top: 2px solid #282828;
+	border-bottom: 2x solid #282828;
+}
+
+td {
+	border: none;
+	padding: 10px;
+	background-color: #1B1B1B;
+}
+
+.lbar {
+	background-image: linear-gradient(bottom, rgb(20,99,0) 0%, rgb(0,191,38) 71%);
+	background-image: -o-linear-gradient(bottom, rgb(20,99,0) 0%, rgb(0,191,38) 71%);
+	background-image: -moz-linear-gradient(bottom, rgb(20,99,0) 0%, rgb(0,191,38) 71%);
+	background-image: -webkit-linear-gradient(bottom, rgb(20,99,0) 0%, rgb(0,191,38) 71%);
+	background-image: -ms-linear-gradient(bottom, rgb(20,99,0) 0%, rgb(0,191,38) 71%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(20,99,0)),
+		color-stop(0.71, rgb(0,191,38))
+	);
+	height: 15px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0px;
+}
+
+.rbar {
+	background-image: linear-gradient(bottom, rgb(150,0,0) 0%, rgb(255,0,0) 67%);
+	background-image: -o-linear-gradient(bottom, rgb(150,0,0) 0%, rgb(255,0,0) 67%);
+	background-image: -moz-linear-gradient(bottom, rgb(150,0,0) 0%, rgb(255,0,0) 67%);
+	background-image: -webkit-linear-gradient(bottom, rgb(150,0,0) 0%, rgb(255,0,0) 67%);
+	background-image: -ms-linear-gradient(bottom, rgb(150,0,0) 0%, rgb(255,0,0) 67%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, rgb(150,0,0)),
+		color-stop(0.67, rgb(255,0,0))
+	);
+	height: 15px;
+	display: inline-block;
+	vertical-align: bottom;
+	margin: 0px;;
+}
+
+/* -- Tooltip Settings -- */
+.tooltip {
+	outline:none;
+	cursor: default;
+}
+
+.tooltip:hover {
+	text-decoration: none;
+}
+
+.tooltip span {
+    z-index: 10;
+    display: none;
+    padding: 10px 10px;
+    margin-top: -10px;
+    margin-left: -210px;
+    width: 160px;
+    line-height: 16px;
+}
+
+.tooltip:hover span{
+    display:inline;
+    position:absolute;
+    color:#111;
+    background:#353535;
+}
+  
+/*CSS3 extras*/
+.tooltip span {
+    border-radius:4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+        
+    -moz-box-shadow: 5px 5px 8px #000;
+    -webkit-box-shadow: 5px 5px 8px #000;
+    box-shadow: 5px 5px 8px #000;
+}
+
+.tooltip span .arrow {
+	width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	
+	border-left: 15px solid #353535;
+	z-index: 20;
+	position: absolute;
+	top: 7px;
+	right: -15px;
+}
