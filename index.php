@@ -8,46 +8,6 @@
 <body>
 
 <?php
-// Database setttings
-// These should match the database settings in your b3.xml
-$db_host = 'localhost';  //MySQL host
-$db_user = '';		 //MySQL username
-$db_pwd = '';	 //MySQL password
-$database = '';	 //B3 databse
-
-//Site settings
-$title = 'Map Popularity';
-$game = 'cod4'; //Enter your game code for map thumbnail images
-			   //or enter "off" to disable them. Codes are listed below.
-//Game codes:
-// cod = Call of Duty
-// cod2 = Call of Duty 2
-// cod4 = Call of Duty 4: Modern Warfare
-// codww = Call of Duty 5: World at War
-// blackops = Call of Duty: Black Ops
-//
-// cod6 = Call of Duty 6: Modern Warefare 2 (COD6 map images from the Stimulus and Resurgence
-// 		  map packs cannot be loaded automatically. Read the section below on how to add
-//		  the map images manually.)
-//
-// urbanterror = Urban Terror
-// etqw = Enemy Territory
-// q3 = Quake 3
-// sof2 = Soldier of Fortune 2
-//
-// bc2 = Battlefield Bad Company 2
-// moh = Medal of Honor 2010
-// bf3 = Battlefield 3
-//
-// homefront = Homefront
-
-// TO ADD CUSTOM OR MISSING MAP IMAGES:
-//
-// Add the map images to the "mapimages" folder. Make sure the image is a
-// 160px x 120px .jpg file and the name of the image matches exactly the name of the map.
-// Also, make sure the image name is all lower case.
-
-
 if (!mysql_connect($db_host, $db_user, $db_pwd))
     die('<div class="alert">Can\'t connect to database</div>');
 

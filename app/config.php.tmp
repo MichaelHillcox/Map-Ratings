@@ -1,0 +1,13 @@
+<?php
+
+    return [
+        "db" => [
+            "host" => "", // database host
+            "name" => "", // database name
+            "user" => "", // database user name
+            "pass" => "",  // database password
+            "table" => "map_votes" // Default is "map_votes"
+        ],
+        "title" => "Map Popularity", // The Title of the page
+        "game" => "cod4", // See the list of games bellow
+    ]
