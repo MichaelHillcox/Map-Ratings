@@ -1,9 +1,14 @@
 <?php
-    const supported = array('cod', 'cod2', 'cod4', 'codww', 'cod6', 'blackops','urbanterror', 'etqw', 'q3', 'sof2', 'bc2', 'moh', 'bf3', 'homefront', 'off');
+    require __DIR__."/app/funcs.php"; // hate this but no need for a full class
+
     $config = require(__DIR__."/app/config.php");
+    const supported = array('cod', 'cod2', 'cod4', 'codww', 'cod6', 'blackops','urbanterror', 'etqw', 'q3', 'sof2', 'bc2', 'moh', 'bf3', 'homefront', 'off');
 
     // check for issues in the config.
+    if( !in_array($config['game'], supported) )
+        showError( "Sorry but that game isn't supported" );
 
+    
 /*
 <html>
 <head>
