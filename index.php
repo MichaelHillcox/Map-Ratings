@@ -1,4 +1,20 @@
+<?php
+    const supported = array('cod', 'cod2', 'cod4', 'codww', 'cod6', 'blackops','urbanterror', 'etqw', 'q3', 'sof2', 'bc2', 'moh', 'bf3', 'homefront', 'off');
+    $config = require(__DIR__."/app/config.php");
 
+?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+
+    </body>
+</html>
+
+<?php /*
 <html>
 <head>
 <title>Server Map Popularity</title> <!-- Set the title of the page -->
@@ -25,9 +41,7 @@ $total_votes = ($sum_row['likes'] + $sum_row['dislikes']);
 
 $rows_num = mysql_num_rows($result);
 
-$supported = array('cod', 'cod2', 'cod4', 'codww', 'cod6', 'blackops',
-				   'urbanterror', 'etqw', 'q3', 'sof2', 'bc2', 'moh',
-				   'bf3', 'homefront', 'off');
+$supported = array('cod', 'cod2', 'cod4', 'codww', 'cod6', 'blackops','urbanterror', 'etqw', 'q3', 'sof2', 'bc2', 'moh', 'bf3', 'homefront', 'off');
 
 $imglink = 'http://image.www.gametracker.com/images/maps/160x120/';
 $mapsdir = 'mapimages/';
@@ -164,3 +178,4 @@ mysql_free_result($result);
 ?>
 </body>
 </html>
+*/ ?>
