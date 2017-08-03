@@ -8,7 +8,15 @@
     if( !in_array($config['game'], supported) )
         showError( "Sorry but that game isn't supported" );
 
-    
+    try {
+		$db = new PDO(sprintf("mysql:host=%s;dbname=%s", $config['db']['host'], $config['db']['name']),
+			$config['db']['user'],
+			$config['db']['pass']);
+	} catch( PDOException $ex ) {
+		showError("Looks like there has been a database error");
+	}
+
+
 /*
 <html>
 <head>
