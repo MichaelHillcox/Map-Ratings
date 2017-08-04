@@ -24,10 +24,17 @@
 ?>
 
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 	<head>
-		<meta charset="utf-8">
 		<title><?= $config['title'] ?></title>
+
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="description" content="CoD4 Map Popularity votes.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+		<link rel="stylesheet" href="app/assets/master.css">
 	</head>
 	<body>
 		<main>
