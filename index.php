@@ -16,8 +16,11 @@
 		showError("Looks like there has been a database error");
 	}
 
-	$totalVotes = 0;
-    $totalMaps = 0;
+	$req = $db->query("SELECT map, likes, dislikes, (likes + dislikes) AS total FROM {$config['db']['table']}");
+	$votes = $req->fetchAll();
+
+	$totalMaps = $req->rowCount();
+	$totalVotes = array_sum( array_column($votes, "total") );
 ?>
 
 <!DOCTYPE html>
