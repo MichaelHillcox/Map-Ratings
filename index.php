@@ -58,5 +58,8 @@
 				<?php endforeach; ?>
 			</div>
 		</main>
+        <footer>
+            <div class="maker" title="Coded with love by Michael Hillcox">&lt;&bsol;&gt; with &hearts; by <a href="http://michaelhillcox.me">Michael Hillcox</a></div>
+        </footer>
 	</body>
 </html>

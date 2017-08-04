@@ -105,3 +105,15 @@ main {
 		}
 	}
 }
+
+footer {
+	padding: 30px 0;
+	text-align: center;
+	a {
+		color: #0037FF;
+		text-decoration: none;
+		&:hover {
+			color: darken(#0037FF, 10);
+		}
+	}
+}
