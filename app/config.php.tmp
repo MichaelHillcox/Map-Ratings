@@ -6,7 +6,7 @@
             "name" => "", // database name
             "user" => "", // database user name
             "pass" => "",  // database password
-            "table" => "map_votes" // Default is "map_votes"
+            "table" => "map_stats" // Default is "map_stats"
         ],
         "title" => "Map Popularity",
         "game" => "cod4", // See the list of games bellow
