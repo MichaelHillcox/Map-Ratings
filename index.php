@@ -16,7 +16,7 @@
 		showError("Looks like there has been a database error");
 	}
 
-	$req = $db->query("SELECT map, likes, dislikes, (likes + dislikes) AS total FROM {$config['db']['table']}");
+	$req = $db->query("SELECT map, likes, dislikes, (likes + dislikes) AS total FROM {$config['db']['table']} ORDER BY likes DESC");
 	$votes = $req->fetchAll();
 
 	$totalMaps = number_format($req->rowCount());
@@ -47,17 +47,11 @@
 					<div class="item noimg">
 <!--						<img src="..">-->
 						<div class="details">
-							<h2>Map</h2>
-							<p>Map Name</p>
+							<h2><?= formatName($vote['map']) ?></h2>
+							<p><?= $vote['map'] ?></p>
 							<div class="votes">
-								<div class="upvotes">
-									<span></span>
-									16
-								</div>
-								<div class="downvotes">
-									<span></span>
-									12
-								</div>
+								<div class="upvotes"><?= $vote['likes'] ?></div>
+								<div class="downvotes"><?= $vote['dislikes'] ?></div>
 							</div>
 						</div>
 					</div>
