@@ -16,16 +16,42 @@
 		showError("Looks like there has been a database error");
 	}
 
+	$totalVotes = 0;
+    $totalMaps = 0;
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title></title>
+		<title><?= $config['title'] ?></title>
 	</head>
 	<body>
-
+		<main>
+			<header>
+				<h1><?= $config['title'] ?></h1>
+				<div class="stats">Showing <span><?= $totalVotes ?></span> votes on <span><?= $totalMaps ?></span> maps</div>
+			</header>
+			<div id="maps">
+				<div class="item">
+					<img src="..">
+					<div class="details">
+						<h2>Map</h2>
+						<p>Map Name</p>
+						<div class="votes">
+							<div class="upvotes">
+								<span></span>
+								16
+							</div>
+							<div class="downvotes">
+								<span></span>
+								12
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
 <?php
