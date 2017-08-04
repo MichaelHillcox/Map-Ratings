@@ -11,6 +11,11 @@ Currently I am not officially saying this product is finished. You can use it an
     - B3 writing the map stats to a map stats table
 - PHP5.6 -> PHP 7.x
 
+# To Do 
+- [ ] Add back image support
+    - This is going to be using a custom solution instead of gametracker
+- [ ] Add back sorting by popularity, likes, dislikes
+
 # How to use
 Either use 
 ``` 
