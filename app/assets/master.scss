@@ -6,3 +6,36 @@ body, html {
 	font-weight: 300;
 	font-size: 14px;
 }
+
+body {
+	color: white;
+	background-color: #010618;
+}
+
+main {
+	max-width: 700px;
+	width: 95%;
+	margin: 0 auto;
+
+	header {
+		text-align: center;
+		margin: 60px 0;
+
+		h1 {
+			font-size: 3rem;
+			margin: 0 0 35px 0;
+		}
+
+		.stats {
+			font-size: 18px;
+			line-height: 42px;
+
+			span {
+				border-radius: 42px;
+				background-color: #0037FF;
+				padding: 10px 20px;
+				margin: 0 14px;
+			}
+		}
+	}
+}

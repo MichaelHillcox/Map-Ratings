@@ -33,7 +33,7 @@
 		<meta name="description" content="CoD4 Map Popularity votes.">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
 		<link rel="stylesheet" href="app/assets/master.css">
 	</head>
 	<body>
