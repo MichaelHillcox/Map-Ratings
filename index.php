@@ -19,8 +19,8 @@
 	$req = $db->query("SELECT map, likes, dislikes, (likes + dislikes) AS total FROM {$config['db']['table']}");
 	$votes = $req->fetchAll();
 
-	$totalMaps = $req->rowCount();
-	$totalVotes = array_sum( array_column($votes, "total") );
+	$totalMaps = number_format($req->rowCount());
+	$totalVotes = number_format(array_sum( array_column($votes, "total") ));
 ?>
 
 <!DOCTYPE html>
@@ -43,23 +43,25 @@
 				<div class="stats">Showing <span><?= $totalVotes ?></span> votes on <span><?= $totalMaps ?></span> maps</div>
 			</header>
 			<div id="maps">
-				<div class="item">
-					<img src="..">
-					<div class="details">
-						<h2>Map</h2>
-						<p>Map Name</p>
-						<div class="votes">
-							<div class="upvotes">
-								<span></span>
-								16
-							</div>
-							<div class="downvotes">
-								<span></span>
-								12
+				<?php foreach ($votes as $vote): ?>
+					<div class="item noimg">
+<!--						<img src="..">-->
+						<div class="details">
+							<h2>Map</h2>
+							<p>Map Name</p>
+							<div class="votes">
+								<div class="upvotes">
+									<span></span>
+									16
+								</div>
+								<div class="downvotes">
+									<span></span>
+									12
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
+				<?php endforeach; ?>
 			</div>
 		</main>
 	</body>
