@@ -12,9 +12,11 @@ Currently I am not officially saying this product is finished. You can use it an
 - PHP5.6 -> PHP 7.x
 
 # To Do 
+#### Version 1.0
 - [ ] Add back image support
     - This is going to be using a custom solution instead of gametracker
 - [ ] Add back sorting by popularity, likes, dislikes
+- [ ] Add update checker
 
 # How to use
 Either use 
