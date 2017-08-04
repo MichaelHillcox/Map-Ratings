@@ -27,6 +27,10 @@ main {
         background-color: #0037FF;
         padding: 10px 20px;
         margin: 0 14px; }
+      @media (max-width: 520px) {
+        main header .stats span {
+          margin: 0 8px;
+          padding: 8px 15px; } }
   main #maps {
     display: flex;
     flex-wrap: wrap;
@@ -40,6 +44,9 @@ main {
       text-align: center;
       box-sizing: border-box;
       padding: 15px; }
+      @media (max-width: 720px) {
+        main #maps .item {
+          width: 100%; } }
       main #maps .item.noimg {
         padding: 47px 0; }
       main #maps .item .details h2, main #maps .item .details p {

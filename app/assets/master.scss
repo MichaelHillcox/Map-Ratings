@@ -36,6 +36,13 @@ main {
 				padding: 10px 20px;
 				margin: 0 14px;
 			}
+
+			@media (max-width: 520px) {
+				span {
+					margin: 0 8px;
+					padding: 8px 15px;
+				}
+			}
 		}
 	}
 
@@ -53,7 +60,9 @@ main {
 			box-sizing: border-box;
 			padding: 15px;
 			
-			
+			@media (max-width: 720px) {
+				width: 100%;
+			}
 
 			&.noimg {
 				padding: 47px 0;
