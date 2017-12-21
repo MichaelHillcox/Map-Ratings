@@ -45,7 +45,6 @@
 			<div id="maps">
 				<?php foreach ($votes as $vote): ?>
 					<div class="item noimg">
-<!--						<img src="..">-->
 						<div class="details">
 							<h2><?= formatName($vote['map']) ?></h2>
 							<p><?= $vote['map'] ?></p>
