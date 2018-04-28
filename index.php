@@ -30,7 +30,7 @@
 
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="description" content="CoD4 Map Popularity votes.">
+		<meta name="description" content="<?= $config['desc'] ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">

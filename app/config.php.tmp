@@ -8,8 +8,10 @@
             "pass" => "",  // database password
             "table" => "map_stats" // Default is "map_stats"
         ],
+
         "title" => "Map Popularity",
         "game" => "cod4", // See the list of games bellow
+        "desc" => "CoD4 Map Popularity votes.",
 
         // Do not touch the below please. These are constant vars are are not needed
         // to be changed unless I update the system.
