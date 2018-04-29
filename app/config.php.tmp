@@ -1,14 +1,6 @@
 <?php
 
     return [
-        "db" => [
-            "host" => "", // database host
-            "name" => "", // database name
-            "user" => "", // database user name
-            "pass" => "",  // database password
-            "table" => "map_stats" // Default is "map_stats"
-        ],
-
         "title" => "Map Popularity",
         "game" => "cod4", // See the list of games bellow
         "desc" => "CoD4 Map Popularity votes.",
@@ -16,6 +8,18 @@
         // Do not touch the below please. These are constant vars are are not needed
         // to be changed unless I update the system.
         "gametracker" => "http://image.www.gametracker.com/images/maps/160x120/"
+
+        // Okay you can touch it again
+        "dbCollection" => [
+            "cod4" => [
+                "title" => "CoD4 S&D",
+                "host" => "", // database host
+                "name" => "", // database name
+                "user" => "", // database user name
+                "pass" => "",  // database password
+                "table" => "map_stats" // Default is "map_stats"
+            ]
+        ],
     ];
 
 
