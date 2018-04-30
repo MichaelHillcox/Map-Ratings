@@ -2,21 +2,24 @@
     require __DIR__."/app/funcs.php"; // hate this but no need for a full class
 
     $config = require(__DIR__."/app/config.php");
-    const supported = ['cod', 'cod2', 'cod4', 'codww', 'cod6', 'blackops','urbanterror', 'etqw', 'q3', 'sof2', 'bc2', 'moh', 'bf3', 'homefront', 'off'];
+    const SUPPORTED = ['cod', 'cod2', 'cod4', 'codww', 'cod6', 'blackops','urbanterror', 'etqw', 'q3', 'sof2', 'bc2', 'moh', 'bf3', 'homefront', 'off'];
 
     // check for issues in the config.
-    if( !in_array($config['game'], supported) )
+    if( !in_array($config['game'], SUPPORTED) )
         showError( "Sorry but that game isn't supported" );
 
+    if( !isset($_GET['game']) || empty($_GET['game']) )
+        $selectedGame = $config['dbCollection'][0]; // Default to the main db.
+
     try {
-		$db = new PDO(sprintf("mysql:host=%s;dbname=%s", $config['db']['host'], $config['db']['name']),
+		$db = new PDO(sprintf("mysql:host=%s;dbname=%s", $selectedGame['db']['host'], $selectedGame['db']['name']),
 			$config['db']['user'],
 			$config['db']['pass']);
 	} catch( PDOException $ex ) {
 		showError("Looks like there has been a database error");
 	}
 
-	$req = $db->query("SELECT map, likes, dislikes, (likes + dislikes) AS total FROM {$config['db']['table']} ORDER BY likes DESC");
+	$req = $db->query("SELECT map, likes, dislikes, (likes + dislikes) AS total FROM {$selectedGame['db']['table']} ORDER BY likes DESC");
 	$votes = $req->fetchAll();
 
 	$totalMaps = number_format($req->rowCount());
